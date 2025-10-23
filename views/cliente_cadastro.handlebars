@@ -1,0 +1,79 @@
+<h1 class="text-center my-4">Cadastro de Novo Cliente</h1>
+ 
+<div class="container" style="max-width: 60%;">
+<form action="/clientes/add" method="POST" class="mb-5 mx-auto p-4 border rounded shadow-sm">
+ 
+        <h5 class="mb-3 text-primary">Informações Pessoais</h5>
+ 
+        <div class="form-group mb-3">
+<label for="nome">Nome Completo:</label>
+<input type="text" class="form-control" name="nome" id="nome" placeholder="Digite o nome completo" required>
+</div>
+ 
+        <div class="row">
+<div class="col-md-6 form-group mb-3">
+<label for="cpf">CPF:</label>
+<input type="text" class="form-control" name="cpf" id="cpf" placeholder="000.000.000-00" required>
+</div>
+<div class="col-md-6 form-group mb-3">
+<label for="data_nascimento">Data de Nascimento:</label>
+<input type="date" class="form-control" name="data_nascimento" id="data_nascimento" required>
+</div>
+</div>
+<h5 class="mt-4 mb-3 text-primary">Contato</h5>
+ 
+        <div class="form-group mb-3">
+<label for="email">E-mail:</label>
+<input type="email" class="form-control" name="email" id="email" placeholder="nome@exemplo.com" required>
+</div>
+ 
+        <div class="row">
+<div class="col-md-6 form-group mb-3">
+<label for="telefone">Telefone:</label>
+<input type="text" class="form-control" name="telefone" id="telefone" placeholder="(99) 99999-9999">
+</div>
+<div class="col-md-6 form-group mb-3">
+<label for="celular">Celular:</label>
+<input type="text" class="form-control" name="celular" id="celular" placeholder="(99) 99999-9999" required>
+</div>
+</div>
+ 
+        <h5 class="mt-4 mb-3 text-primary">Endereço</h5>
+ 
+        <div class="row">
+<div class="col-md-4 form-group mb-3">
+<label for="cep">CEP:</label>
+<input type="text" class="form-control" name="cep" id="cep" placeholder="00000-000">
+</div>
+<div class="col-md-8 form-group mb-3">
+<label for="logradouro">Rua/Avenida:</label>
+<input type="text" class="form-control" name="logradouro" id="logradouro" placeholder="Nome da rua/avenida" required>
+</div>
+</div>
+ 
+        <div class="row">
+<div class="col-md-4 form-group mb-3">
+<label for="numero">Número:</label>
+<input type="text" class="form-control" name="numero" id="numero" required>
+</div>
+<div class="col-md-8 form-group mb-3">
+<label for="complemento">Complemento (Opcional):</label>
+<input type="text" class="form-control" name="complemento" id="complemento" placeholder="Apto, Bloco, etc.">
+</div>
+</div>
+ 
+        <div class="row">
+<div class="col-md-6 form-group mb-3">
+<label for="cidade">Cidade:</label>
+<input type="text" class="form-control" name="cidade" id="cidade" required>
+</div>
+ 
+</div>
+ 
+        <div class="d-grid gap-2 mt-4">
+<button type="submit" class="btn btn-success btn-lg">Cadastrar Cliente</button>
+</div>
+ 
+    </form>
+</div>
+ 

@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#each Categoria}}
+    <tr>
+        <td value="{{this.nome}}"></td>
+        <td value="{{this.descricao}}"></td>
+        <td><a href="#">Apagar</a> <a href="#">Adicionar</a></td>
+    </tr>
+    {{#each}}
+    </tbody>
+</table>

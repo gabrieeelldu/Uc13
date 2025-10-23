@@ -60,3 +60,24 @@ CREATE  DATABASE IF NOT EXISTS ecommerce_pc
         ('Memória DDR4 8GB 2666MHz', 'Kingston Fury Beast', 189.90, 20, 2),
         ('Memória DDR4 16GB 3200MGHz', 'Corsair Vengeance LPX', 349.50, 15, 2),
         ('NVIDIA GeForce GTX 1660','6GB GDDR5', 1450.00, 5, 3);
+
+        INSERT INTO Cliente (nome, email, senha, endereço) VALUES
+         ('João Silva', 'joao@email.com', '123456', 'Rua A, 123'),
+        ('Maria Oliveira', 'maria@email.com', 'abcdef', 'Av.Central, 456'),
+        ('Carlos Souza', 'carlos@email.com', 'senha123', 'Rua das Flores, 78'),
+        ('Ana Costa', 'ana@email.com', 'senha456', 'Rua da Paz, 10'),
+        ('Pedro Lima', 'pedro@email.com', 'minhasenha', 'Rua verde, 98');
+
+        CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    tipo VARCHAR(20) NOT NULL DEFAULT 'comum', -- EX: 'admin', 'comum', 'vendedor
+    criado_em DATETIME DEFAULT CURRENT_TIMESTAMP
+
+    INSERT INTO usuarios (nome, email, senha, tipo) VALUES
+    ('Administrador', 'admin@email.com', '123456', 'admin');
+
+    UPDATE usuarios
+    SET senha = '$2b$10$vcShCSwNHImUdm0/x2xk3e9qBh1DYR4vY.MUvGoX92e6N/ZYnBBNe'

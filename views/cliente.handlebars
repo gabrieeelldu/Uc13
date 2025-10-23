@@ -1,0 +1,13 @@
+<h1>Bem-Vindo Cliente</h1>
+
+{{#if clientes.length}}
+ {{#each clientes}}
+    <div>
+        <h2>{{this.nome}}</h2>
+        <p>Email: R$ {{this.email}}</p>
+        <p>Endereço: {{this.endereco}}</p>
+    </div>
+    {{/each}}
+     {{else}}
+    <p>Sem produtos disponíveis no momento.</p>
+    {{/if}}
